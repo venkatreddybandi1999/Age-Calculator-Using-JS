@@ -8,13 +8,14 @@ const ageFunction = () => {
   var d2 = date.getDate();
   var m2 = 1 + date.getMonth();
   var y2 = date.getFullYear();
-  // console.log(date);
-  // console.log(d2);
-  // console.log(y2);
-  // console.log(m2);
+  console.log(date);
+  console.log(d2);
+  console.log(m2);
+  console.log(y2);
+
   if (d1 > d2) {
-    // var month=[31,28,31,30,31,30,31,31,30,31,30,31]
-    d2 = d2 + month;
+    var month=[31,28,31,30,31,30,31,31,30,31,30,31]
+    d2 = d2 + month[m2-1];
     m2 = m2 - 1;
   }
   var d = d2 - d1;
